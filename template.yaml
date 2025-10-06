@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Primeiro template CloudFormation - cria um bucket S3'
+
+Parameters:
+  BucketName:
+    Type: String
+    Description: Nome do bucket (precisa ser único no mundo)
+    AllowedPattern: '^[a-z0-9.-]{3,63}$'
+
+Resources:
+  LabBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+Outputs:
+  BucketNameOut:
+    Value: !Ref LabBucket
+    Description: Nome do bucket criado
