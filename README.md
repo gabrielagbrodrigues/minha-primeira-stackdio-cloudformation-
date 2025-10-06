@@ -47,8 +47,17 @@ Este repositório contém a entrega do *desafio de AWS CloudFormation da DIO, on
 5.	Validei no serviço Amazon S3 que o bucket foi criado com sucesso.
 
 Evidencias:
-- Stack criada no CloudFormation
-- Bucket no serviço S3
+
+
+### Stack criada no CloudFormation  
+  ![Stack criada](stack-create-complete.png.JPG)
+### Lista de Buckets no S3  
+  ![Buckets no S3](s3-bucket-list.png.JPG) 
+  
+
+
+
+
 
 Conclusão
 
